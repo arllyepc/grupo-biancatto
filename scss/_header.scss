@@ -1,0 +1,55 @@
+.header-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+
+  &.scrolled {
+    background: var(--color-main);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    .container {
+      height: 4rem;
+
+      .header__logo {
+        height: 3rem;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .container {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to(small) {
+      height: 5rem;
+    }
+
+    @include respond-to(medium) {
+      height: 5rem;
+    }
+
+    .header__logo {
+      height: 5rem;
+
+      @include respond-to(small) {
+        height: 4rem;
+      }
+
+      @include respond-to(medium) {
+        height: 4rem;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
