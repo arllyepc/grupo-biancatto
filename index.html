@@ -6,10 +6,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Grupo Biancatto - Marcenaria high-end, projetos, serviços, design de
+      interiores e mais.
+    </title>
+    <meta
+      name="title"
+      content="Grupo Biancatto - Marcenaria high-end, projetos, serviços, design de interiores e mais.
+"
+    />
+    <meta
+      name="description"
+      content="O Grupo Biancatto é uma empresa de São Paulo capital especialista em marcenaria high-end, projetos, serviços e design de interiores e mais. "
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Grupo Biancatto - Marcenaria high-end, projetos, serviços, design de interiores e mais.
+"
+    />
+    <meta
+      property="og:description"
+      content="O Grupo Biancatto é uma empresa de São Paulo capital especialista em marcenaria high-end, projetos, serviços e design de interiores e mais. "
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Grupo Biancatto - Marcenaria high-end, projetos, serviços, design de interiores e mais.
+"
+    />
+    <meta
+      property="twitter:description"
+      content="O Grupo Biancatto é uma empresa de São Paulo capital especialista em marcenaria high-end, projetos, serviços e design de interiores e mais. "
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
 
     <link rel="stylesheet" href="./css/plugins.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Grupo Biancatto</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -40,7 +92,8 @@
       <div class="container">
         <div class="s-hero__text">
           <h1 data-aos="fade-up" data-aos-duration="1500">
-            Projetando o amanhã, HOJE
+            Pense de um jeito novo. <br />
+            Pense <span>Biancatto</span>.
           </h1>
 
           <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
@@ -79,8 +132,8 @@
               <h3>Alta qualidade</h3>
             </header>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ac ornare senectus
-              nunc ut id non odio. Congue sagittis metus id eget vel.
+              Produtos e ferragens de alta qualidade e personalizáveis,
+              acabamentos finos e coleções que acompanham tendências de mercado.
             </p>
           </div>
           <div
@@ -90,11 +143,12 @@
             data-aos-duration="1500"
           >
             <header class="why-card__header">
-              <h3>Alta qualidade</h3>
+              <h3>Acompanhamento</h3>
             </header>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ac ornare senectus
-              nunc ut id non odio. Congue sagittis metus id eget vel.
+              Nossa proposta é oferecer todo auxílio ao cliente. Entendemos que
+              cada pessoa precisa de um tipo de acompanhamento, projeto e
+              auxílio.
             </p>
           </div>
           <div
@@ -104,11 +158,12 @@
             data-aos-duration="1500"
           >
             <header class="why-card__header">
-              <h3>Alta qualidade</h3>
+              <h3>Assessoria completa</h3>
             </header>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ac ornare senectus
-              nunc ut id non odio. Congue sagittis metus id eget vel.
+              Seguimos um modelo no qual acompanhamos clientes em lojas
+              parceiras para escolha de todos itens, como iluminação, tintas,
+              estofados, decoração e pedras.
             </p>
           </div>
         </div>
@@ -346,7 +401,6 @@
     </section> -->
 
     <div class="s-portfolio">
-      <!-- estrutura do swiper js com miniaturas clicáveis -->
       <div class="container">
         <h2 class="s-portfolio__title">Portfólio</h2>
         <ul class="portfolio__list">
@@ -368,54 +422,59 @@
         </ul>
 
         <div
+          data-portfolio-item="cozinhas"
           style="
-            --swiper-navigation-color: #fff;
-            --swiper-pagination-color: #fff;
+            --swiper-navigation-color: var(--color-main);
+            --swiper-pagination-color: var(--color-main);
           "
           class="swiper mySwiper2"
         >
-          <div class="swiper-wrapper" data-portfolio-item="cozinhas">
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <header class="portfolio-item__title">
                 <p>Sofisticação</p>
                 <h3>Cozinha Continental</h3>
               </header>
-              <img src="./img/img-box-1.png" alt="" />
+              <div class="swiper-zoom-container">
+                <img src="./img/img-box-4.png" alt="Imagem de galeria" />
+              </div>
             </div>
             <div class="swiper-slide">
               <header class="portfolio-item__title">
                 <p>Sofisticação</p>
                 <h3>Cozinha Continental</h3>
               </header>
-              <img src="./img/img-box-3.png" alt="" />
+              <div class="swiper-zoom-container">
+                <img src="./img/img-box-4.png" alt="Imagem de galeria" />
+              </div>
             </div>
             <div class="swiper-slide">
               <header class="portfolio-item__title">
                 <p>Sofisticação</p>
                 <h3>Cozinha Continental</h3>
               </header>
-              <img src="./img/img-box-2.png" alt="" />
+              <img src="./img/img-box-2.png" alt="Imagem de galeria" />
+            </div>
+            <div class="swiper-slide">\
+              <header class="portfolio-item__title">
+                <p>Sofisticação</p>
+                <h3>Cozinha Continental</h3>
+              </header>
+              <img src="./img/img-box-1.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
               <header class="portfolio-item__title">
                 <p>Sofisticação</p>
                 <h3>Cozinha Continental</h3>
               </header>
-              <img src="./img/img-box-1.png" alt="" />
+              <img src="./img/img-box-3.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
               <header class="portfolio-item__title">
                 <p>Sofisticação</p>
                 <h3>Cozinha Continental</h3>
               </header>
-              <img src="./img/img-box-3.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <header class="portfolio-item__title">
-                <p>Sofisticação</p>
-                <h3>Cozinha Continental</h3>
-              </header>
-              <img src="./img/img-box-2.png" alt="" />
+              <img src="./img/img-box-2.png" alt="Imagem de galeria" />
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -424,22 +483,22 @@
         <div thumbsSlider="" class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./img/img-box-1.png" alt="" />
+              <img src="./img/img-box-4.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/img-box-3.png" alt="" />
+              <img src="./img/img-box-4.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/img-box-2.png" alt="" />
+              <img src="./img/img-box-2.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/img-box-1.png" alt="" />
+              <img src="./img/img-box-1.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/img-box-3.png" alt="" />
+              <img src="./img/img-box-3.png" alt="Imagem de galeria" />
             </div>
             <div class="swiper-slide">
-              <img src="./img/img-box-2.png" alt="" />
+              <img src="./img/img-box-2.png" alt="Imagem de galeria" />
             </div>
           </div>
         </div>

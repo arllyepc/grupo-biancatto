@@ -1,53 +1,68 @@
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 800px;
 }
 
-.swiper-slide {
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.mySwiper2 {
+  height: 80vh;
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  .portfolio-item__title {
-    h3 {
-      margin-bottom: 2rem;
-      color: #1e1e1e;
-      font-family: var(--base-font-family);
-      font-size: 2.625rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      text-transform: capitalize;
+    img {
+      object-fit: cover !important;
     }
 
-    p {
-      color: #e58411;
-      font-family: var(--base-font-family);
-      font-size: 1.125rem;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 0.19688rem;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
+    .portfolio-item__title {
+      h3 {
+        margin-bottom: 2rem;
+        color: #1e1e1e;
+        font-family: var(--base-font-family);
+        font-size: 2.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+
+        @include respond-to(small) {
+          font-size: 2rem;
+        }
+
+        @include respond-to(medium) {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        color: #e58411;
+        font-family: var(--base-font-family);
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.19688rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.swiper {
+  object-fit: fill;
+} 
+ */
+/* .swiper {
   width: 100%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .swiper-slide {
   background-size: cover;
@@ -66,18 +81,28 @@
 }
 
 .mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
+  height: 250px;
   opacity: 0.4;
+
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to(small) {
+    height: 100px;
+  }
+
+  @include respond-to(medium) {
+    height: 100px;
+  }
+
+  img {
+    object-fit: cover !important;
+    height: 100%;
+  }
 }
 
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
