@@ -45,6 +45,10 @@ button {
   display: none !important;
 }
 
+[data-portfolio-item] {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 1536px;
@@ -409,10 +413,22 @@ button {
   height: 800px;
 }
 
-.mySwiper2 {
-  height: 80vh;
+.mySwiper2,
+.mySwiper4,
+.mySwiper6,
+.mySwiper8,
+.mySwiper10,
+.mySwiper12,
+.mySwiper14 {
+  height: 70%;
 }
-.mySwiper2 .swiper-slide {
+.mySwiper2 .swiper-slide,
+.mySwiper4 .swiper-slide,
+.mySwiper6 .swiper-slide,
+.mySwiper8 .swiper-slide,
+.mySwiper10 .swiper-slide,
+.mySwiper12 .swiper-slide,
+.mySwiper14 .swiper-slide {
   font-size: 18px;
   background: #fff;
   display: -webkit-box;
@@ -426,11 +442,23 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.mySwiper2 .swiper-slide img {
+.mySwiper2 .swiper-slide img,
+.mySwiper4 .swiper-slide img,
+.mySwiper6 .swiper-slide img,
+.mySwiper8 .swiper-slide img,
+.mySwiper10 .swiper-slide img,
+.mySwiper12 .swiper-slide img,
+.mySwiper14 .swiper-slide img {
   -o-object-fit: cover !important;
   object-fit: cover !important;
 }
-.mySwiper2 .swiper-slide .portfolio-item__title h3 {
+.mySwiper2 .swiper-slide .portfolio-item__title h3,
+.mySwiper4 .swiper-slide .portfolio-item__title h3,
+.mySwiper6 .swiper-slide .portfolio-item__title h3,
+.mySwiper8 .swiper-slide .portfolio-item__title h3,
+.mySwiper10 .swiper-slide .portfolio-item__title h3,
+.mySwiper12 .swiper-slide .portfolio-item__title h3,
+.mySwiper14 .swiper-slide .portfolio-item__title h3 {
   margin-bottom: 2rem;
   color: #1e1e1e;
   font-family: var(--base-font-family);
@@ -438,19 +466,36 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-transform: capitalize;
 }
 @media (max-width: 359px) {
-  .mySwiper2 .swiper-slide .portfolio-item__title h3 {
+  .mySwiper2 .swiper-slide .portfolio-item__title h3,
+  .mySwiper4 .swiper-slide .portfolio-item__title h3,
+  .mySwiper6 .swiper-slide .portfolio-item__title h3,
+  .mySwiper8 .swiper-slide .portfolio-item__title h3,
+  .mySwiper10 .swiper-slide .portfolio-item__title h3,
+  .mySwiper12 .swiper-slide .portfolio-item__title h3,
+  .mySwiper14 .swiper-slide .portfolio-item__title h3 {
     font-size: 2rem;
   }
 }
 @media (min-width: 360px) and (max-width: 959px) {
-  .mySwiper2 .swiper-slide .portfolio-item__title h3 {
+  .mySwiper2 .swiper-slide .portfolio-item__title h3,
+  .mySwiper4 .swiper-slide .portfolio-item__title h3,
+  .mySwiper6 .swiper-slide .portfolio-item__title h3,
+  .mySwiper8 .swiper-slide .portfolio-item__title h3,
+  .mySwiper10 .swiper-slide .portfolio-item__title h3,
+  .mySwiper12 .swiper-slide .portfolio-item__title h3,
+  .mySwiper14 .swiper-slide .portfolio-item__title h3 {
     font-size: 2rem;
   }
 }
-.mySwiper2 .swiper-slide .portfolio-item__title p {
+.mySwiper2 .swiper-slide .portfolio-item__title p,
+.mySwiper4 .swiper-slide .portfolio-item__title p,
+.mySwiper6 .swiper-slide .portfolio-item__title p,
+.mySwiper8 .swiper-slide .portfolio-item__title p,
+.mySwiper10 .swiper-slide .portfolio-item__title p,
+.mySwiper12 .swiper-slide .portfolio-item__title p,
+.mySwiper14 .swiper-slide .portfolio-item__title p {
   color: #e58411;
   font-family: var(--base-font-family);
   font-size: 1.125rem;
@@ -479,19 +524,29 @@ button {
   background-position: center;
 }
 
-.mySwiper2 {
+/* .mySwiper2, .mySwiper4, .mySwiper6  {
   height: 80%;
   width: 100%;
-}
-
-.mySwiper {
+} */
+.mySwiper,
+.mySwiper3,
+.mySwiper5,
+.mySwiper7,
+.mySwiper9,
+.mySwiper11,
+.mySwiper13 {
   height: 20%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 0;
 }
-
-.mySwiper .swiper-slide {
+.mySwiper .swiper-slide,
+.mySwiper3 .swiper-slide,
+.mySwiper5 .swiper-slide,
+.mySwiper7 .swiper-slide,
+.mySwiper9 .swiper-slide,
+.mySwiper11 .swiper-slide,
+.mySwiper13 .swiper-slide {
   height: 250px;
   opacity: 0.4;
   border-radius: 20px;
@@ -505,24 +560,47 @@ button {
   -ms-flex-align: center;
   align-items: center;
 }
+.mySwiper .swiper-slide.swiper-slide-thumb-active,
+.mySwiper3 .swiper-slide.swiper-slide-thumb-active,
+.mySwiper5 .swiper-slide.swiper-slide-thumb-active,
+.mySwiper7 .swiper-slide.swiper-slide-thumb-active,
+.mySwiper9 .swiper-slide.swiper-slide-thumb-active,
+.mySwiper11 .swiper-slide.swiper-slide-thumb-active,
+.mySwiper13 .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
 @media (max-width: 359px) {
-  .mySwiper .swiper-slide {
+  .mySwiper .swiper-slide,
+  .mySwiper3 .swiper-slide,
+  .mySwiper5 .swiper-slide,
+  .mySwiper7 .swiper-slide,
+  .mySwiper9 .swiper-slide,
+  .mySwiper11 .swiper-slide,
+  .mySwiper13 .swiper-slide {
     height: 100px;
   }
 }
 @media (min-width: 360px) and (max-width: 959px) {
-  .mySwiper .swiper-slide {
+  .mySwiper .swiper-slide,
+  .mySwiper3 .swiper-slide,
+  .mySwiper5 .swiper-slide,
+  .mySwiper7 .swiper-slide,
+  .mySwiper9 .swiper-slide,
+  .mySwiper11 .swiper-slide,
+  .mySwiper13 .swiper-slide {
     height: 100px;
   }
 }
-.mySwiper .swiper-slide img {
+.mySwiper .swiper-slide img,
+.mySwiper3 .swiper-slide img,
+.mySwiper5 .swiper-slide img,
+.mySwiper7 .swiper-slide img,
+.mySwiper9 .swiper-slide img,
+.mySwiper11 .swiper-slide img,
+.mySwiper13 .swiper-slide img {
   -o-object-fit: cover !important;
   object-fit: cover !important;
   height: 100%;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
 }
 
 .s-hero {

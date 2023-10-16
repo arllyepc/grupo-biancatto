@@ -3,8 +3,14 @@
   height: 800px;
 }
 
-.mySwiper2 {
-  height: 80vh;
+.mySwiper2,
+.mySwiper4,
+.mySwiper6,
+.mySwiper8,
+.mySwiper10,
+.mySwiper12,
+.mySwiper14 {
+  height: 70%;
   .swiper-slide {
     font-size: 18px;
     background: #fff;
@@ -25,7 +31,6 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        text-transform: capitalize;
 
         @include respond-to(small) {
           font-size: 2rem;
@@ -69,40 +74,46 @@
   background-position: center;
 }
 
-.mySwiper2 {
+/* .mySwiper2, .mySwiper4, .mySwiper6  {
   height: 80%;
   width: 100%;
-}
+} */
 
-.mySwiper {
+.mySwiper,
+.mySwiper3,
+.mySwiper5,
+.mySwiper7,
+.mySwiper9,
+.mySwiper11,
+.mySwiper13 {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
-}
 
-.mySwiper .swiper-slide {
-  height: 250px;
-  opacity: 0.4;
+  .swiper-slide {
+    height: 250px;
+    opacity: 0.4;
 
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  @include respond-to(small) {
-    height: 100px;
+    &.swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    @include respond-to(small) {
+      height: 100px;
+    }
+
+    @include respond-to(medium) {
+      height: 100px;
+    }
+
+    img {
+      object-fit: cover !important;
+      height: 100%;
+    }
   }
-
-  @include respond-to(medium) {
-    height: 100px;
-  }
-
-  img {
-    object-fit: cover !important;
-    height: 100%;
-  }
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
 }
