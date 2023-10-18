@@ -55,21 +55,31 @@ $(window).scroll(function () {
   }
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Esconde todos os itens do portfólio
-  $('[data-portfolio-item]').hide();
-  
-  // Mostra o primeiro item do portfólio
-  $('[data-portfolio-item]').first().show();
-  
-  // Faz o clique na lista de portfólio mostrar o respectivo item do portfólio
-  $('.portfolio__item').on('click', function() {
-      var portfolioName = $(this).data('portfolio-nav');
-      $('[data-portfolio-item]').hide();
-      $('[data-portfolio-item="' + portfolioName + '"]').show();
-      
-      // Remove a classe 'active' de todos os itens e adiciona ao item clicado
-      $('.portfolio__item').removeClass('active');
-      $(this).addClass('active');
+  $("[data-portfolio-item]").hide();
+
+  // Pega os dois primeiros itens do portfólio e os exibe
+  var primeirosItens = $("[data-portfolio-item]").slice(0, 2).show();
+
+  // Ativa os itens correspondentes na lista de navegação
+  primeirosItens.each(function () {
+    var nome = $(this).data("portfolio-item");
+    $('.portfolio__item[data-portfolio-nav="' + nome + '"]').addClass("active");
+    $('img[data-portfolio-item="' + nome + '"]').show();
+  });
+
+  // Faz o clique na lista de portfólio mostrar o respectivo item do portfólio e ativar o thumb correspondente
+  $(".portfolio__item").on("click", function () {
+    var portfolioName = $(this).data("portfolio-nav");
+    $("[data-portfolio-item]").hide();
+    $('[data-portfolio-item="' + portfolioName + '"]').show();
+
+    $("img[data-portfolio-item]").hide();
+    $('img[data-portfolio-item="' + portfolioName + '"]').show();
+
+    // Remove a classe 'active' de todos os itens da lista e adiciona ao item clicado
+    $(".portfolio__item").removeClass("active");
+    $(this).addClass("active");
   });
 });
