@@ -45,35 +45,35 @@
       position: absolute;
       z-index: 2;
 
-      button {
+      a {
         margin-top: 4rem;
       }
 
       h1 {
         color: var(--colors-base-white, #fff);
         font-family: var(--headline-font-family);
-        font-size: 6rem;
-        font-weight: 500;
-        line-height: 6rem;
-        letter-spacing: 0.06rem;
+        font-size: 5rem;
+        font-weight: 400;
+        line-height: 5rem;
+        letter-spacing: 0.05rem;
 
-        /* span {
-          
-          display: inline-block;
-          padding: 1rem;
-          border-radius: 2rem;
-          width: max-content;
-          background-color: #1e1e1e;
+        /*   span {
+          color: #d9dfdf;
 
-
+          font-family: var(--headline-font-family);
+          font-size: 5rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 6.25rem; /* 125% 
+          letter-spacing: 0.05rem;
         } */
 
         @include respond-to(small) {
-          font-size: 4rem;
+          font-size: 3rem;
           line-height: 100%;
         }
         @include respond-to(medium) {
-          font-size: 4rem;
+          font-size: 3rem;
           line-height: 100%;
         }
       }
@@ -82,15 +82,15 @@
         color: var(--colors-base-white, #fff);
         font-family: var(--headline-font-family);
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
 
         @include respond-to(small) {
-          font-size: 2rem;
+          font-size: 1.5rem;
           line-height: 100%;
         }
         @include respond-to(medium) {
-          font-size: 2rem;
+          font-size: 1.5rem;
           line-height: 100%;
         }
       }
@@ -128,7 +128,10 @@
       h2 {
         color: var(--colors-slate-50, #f8fafc);
         font-family: var(--headline-font-family);
-        font-size: 3.5rem;
+        font-weight: 500;
+
+        font-size: 3rem;
+        font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
@@ -154,10 +157,21 @@
 
 .s-why2 {
   padding: 4rem 0rem;
+  background-color: var(--color-main);
+
   .container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    align-items: center;
+
+    @include respond-to(medium) {
+      gap: 2rem;
+    }
+
+    @include respond-to(small) {
+      gap: 2rem;
+    }
 
     .s-why2__item {
       display: grid;
@@ -166,22 +180,87 @@
       gap: var(--spacing-12, 4rem);
       padding: 3rem 0rem;
 
+      &.s-why2__item__especial {
+        display: flex;
+        max-width: 96rem;
+        gap: 14rem;
+        padding: 0 8rem;
+
+        @include respond-to(small) {
+          max-width: 100%;
+          gap: 4rem;
+          padding: 0;
+        }
+
+        @include respond-to(medium) {
+          max-width: 100%;
+          gap: 4rem;
+          padding: 0;
+        }
+      }
+
       &.big {
-        grid-template-columns: 2fr 1fr;
+        display: flex;
         gap: var(--spacing-12, 2rem);
+
+        /*   max-width: 40%; */
+        @include respond-to(small) {
+          max-width: 100%;
+          flex-direction: column;
+        }
+
+        @include respond-to(medium) {
+          max-width: 100%;
+          flex-direction: column;
+        }
+
+        .s-why2__text {
+          max-width: 40%;
+          @include respond-to(small) {
+            max-width: 100%;
+            flex-direction: column;
+          }
+
+          @include respond-to(medium) {
+            max-width: 100%;
+            flex-direction: column;
+          }
+        }
       }
       @include respond-to(medium) {
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        gap: 2rem;
+        padding: 0;
       }
 
       @include respond-to(small) {
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        gap: 2rem;
+        padding: 0;
       }
       .s-why2__img-box {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @include respond-to(small) {
+          height: 400px;
+          width: 100%;
+        }
+
+        @include respond-to(medium) {
+          height: 400px;
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
         .group-img-unique {
           svg {
             width: 100%;
@@ -260,11 +339,14 @@
 
       .s-why2__text {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         gap: 1rem;
+
         .s-why2__title {
+          margin-bottom: 2rem;
           p {
-            color: #e58411;
+            color: var(--colors-slate-50, #f8fafc);
             font-size: 1.125rem;
             font-style: normal;
             font-weight: 400;
@@ -273,7 +355,7 @@
             text-transform: uppercase;
           }
           h2 {
-            color: #1e1e1e;
+            color: var(--colors-slate-50, #f8fafc);
             font-family: var(--headline-font-family);
             font-size: 3rem;
             font-weight: 700;
@@ -282,11 +364,17 @@
         }
 
         p {
-          color: #1e1e1e;
-          font-family: var(--base-font-family);
+          /* color: var(--colors-slate-50, #f8fafc);
+          
           font-size: 1.125rem;
           font-weight: 400;
-          line-height: 150%;
+          line-height: 150%; */
+          color: var(--colors-slate-50, #f8fafc);
+          font-family: var(--base-font-family);
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 185%; /* 2.08125rem */
         }
       }
     }
@@ -372,16 +460,17 @@
 
 .s-portfolio {
   padding: 4rem 0;
+  background-color: var(--color-main);
 
   .container {
     .s-portfolio__title {
-      color: #1e1e1e;
+      color: #d9dfdf;
       font-family: var(--headline-font-family);
       font-size: 4rem;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
 
       @include respond-to(small) {
         font-size: 2.5rem;
@@ -395,10 +484,10 @@
 
 .s-contact {
   padding: var(--spacing-24, 6rem) 0rem;
-  background: var(--colors-slate-50, #f8fafc);
+  background: var(--color-main);
   .container {
     .s-contact__title {
-      color: #01242a;
+      color: #d9dfdf;
       font-family: var(--headline-font-family);
       font-size: 4rem;
       font-style: normal;
@@ -418,6 +507,10 @@
       @include respond-to(medium) {
         flex-direction: column-reverse;
         gap: 2rem;
+      }
+
+      .wpcf7-response-output {
+        color: #fdfefe;
       }
 
       .wpcf7-submit {
@@ -493,13 +586,23 @@
           gap: 0.5rem;
           align-self: stretch;
           border-radius: 0.25rem;
-          border: 1px solid rgba(41, 47, 54, 0.2);
-          color: #292f36;
+          border: 1px solid rgba(217, 223, 223, 0.2);
+          color: #d9dfdf;
           font-family: var(--base-font-family);
           font-size: 0.875rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          background-color: #01242a;
+
+          &::placeholder {
+            color: #d9dfdf;
+            font-family: var(--base-font-family);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
         }
 
         .wpcf7-form {
@@ -534,16 +637,17 @@
           gap: 0.5rem;
           align-self: stretch;
           border-radius: 0.25rem;
-          border: 1px solid rgba(41, 47, 54, 0.2);
-          color: #292f36;
+          border: 1px solid rgba(217, 223, 223, 0.2);
+          color: #d9dfdf;
           font-family: var(--base-font-family);
           font-size: 0.875rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          background-color: #01242a;
 
           &::placeholder {
-            color: #292f36;
+            color: #d9dfdf;
             font-family: var(--base-font-family);
             font-size: 0.875rem;
             font-style: normal;
@@ -559,7 +663,7 @@
 
       .s-contact__text {
         p {
-          color: #1e1e1e;
+          color: #d9dfdf;
           font-family: var(--base-font-family);
           font-size: 1.125rem;
           font-style: normal;
@@ -568,5 +672,17 @@
         }
       }
     }
+  }
+}
+
+.s-grid-photo {
+  background-color: #01242a;
+  padding: 4rem 0rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
   }
 }

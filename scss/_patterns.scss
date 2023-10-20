@@ -36,6 +36,10 @@
         .icon-btn-green {
           animation: btn-icon 1s ease-in-out infinite;
 
+          path {
+            fill: #70888b !important;
+          }
+
           @keyframes btn-icon {
             0% {
               transform: translateX(0);
@@ -136,8 +140,6 @@
   margin-bottom: 3rem;
   flex-wrap: wrap;
 
-
-
   .portfolio__item {
     cursor: pointer;
     color: var(--gray-500, #6b7280);
@@ -168,5 +170,100 @@
         border-radius: 0.25rem;
       }
     }
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border: none;
+  padding: 10px;
+  background: #40bd4f;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button img {
+  width: 40px;
+  height: auto;
+}
+
+.whatsapp-button:hover {
+  background: #128c7e;
+}
+
+.s-why2__img-slide {
+  position: relative;
+  height: 563px;
+  width: 600px;
+
+  @include respond-to(small) {
+    height: 100%;
+    width: 100vw;
+  }
+
+  @include respond-to(medium) {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+      border-radius: 20px;
+    }
+  }
+}
+
+/* .fancybox__toolbar {
+  z-index: 9999;
+  top: 80px;
+}
+ */
+.fancybox-thumb-galeria {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 400px;
+  .fancybox-thumb-galeria-overlay {
+    position: absolute;
+    background: #6b7f82;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9dfdf;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 20px;
   }
 }

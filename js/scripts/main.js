@@ -1,5 +1,23 @@
 AOS.init();
 
+/* var swiper = new Swiper(".mySwiperSpecial", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: true,
+  },
+}); */
+
+$(document).on("beforeShow.fb", function (e, instance, slide) {
+  $("body").addClass("with-fancybox-open");
+});
+
+$(document).on("afterClose.fb", function (e, instance, slide) {
+  $("body").removeClass("with-fancybox-open");
+});
+
 const initSwiper = (mainSelector, thumbSelector, isZoom = false) => {
   const thumbSwiper = new Swiper(thumbSelector, {
     loop: true,

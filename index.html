@@ -62,8 +62,14 @@
 
     <link rel="stylesheet" href="./css/plugins.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="photoswipe/photoswipe.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -83,10 +89,10 @@
     </header>
 
     <section class="s-hero">
-      <div class="s-hero__overlay"></div>
+      <!-- <div class="s-hero__overlay"></div> -->
       <img
         class="s-hero__bg"
-        src="./img/bg-default.png"
+        src="./img/bg-default-alt.png"
         alt="Imagem de fundo da seção principal do site"
       />
       <div class="container">
@@ -105,7 +111,7 @@
               Entrar em contato
               <img
                 class="icon-btn-green"
-                src="./img/icon-arrow-gold.svg"
+                src="./img/grommet-icons_form-next-link-alt.svg"
                 alt="Ícone de seta dourado"
               />
             </a>
@@ -172,9 +178,14 @@
 
     <section class="s-why2">
       <div class="container">
-        <div class="s-why2__item" data-aos="fade-left" data-aos-duration="1000">
+        <div
+          class="s-why2__item s-why2__item__especial"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <div class="s-why2__img-box">
-            <div class="group-img-unique">
+            <img src="/img/img-about-us.png" alt="Imagem da equipe" />
+            <!-- <div class="group-img-unique">
               <svg
                 class="shadow-lg"
                 width="629"
@@ -204,20 +215,25 @@
                   height="445"
                 />
               </svg>
-            </div>
+            </div> -->
           </div>
           <div class="s-why2__text">
             <header class="s-why2__title">
-              <p>especialistas</p>
+              <!-- <p>especialistas</p> -->
               <h2>Sobre Nós</h2>
             </header>
             <p>
               Somos o Grupo Biancatto, especializados em móveis planejados
-              high-end e reformas. Nosso compromisso é oferecer um produto de
-              alta qualidade, sem limitações de projeto, atendendo a todas as
-              necessidades de clientes e arquitetos. Unimos obra, acabamentos e
-              móveis planejados de forma simples, rápida e dinâmica, garantindo
-              resultados surpreendentes.
+              high-end e reformas.
+            </p>
+            <p>
+              Nosso compromisso é oferecer um serviço de alta qualidade, sem
+              limitações de projetos, atendendo a todas as necessidades dos
+              nossos clientes.
+            </p>
+            <p>
+              Unimos obra, acabamentos e móveis planejados de forma simples,
+              rápida e dinâmica, garantindo resultados surpreendentes.
             </p>
           </div>
         </div>
@@ -226,6 +242,25 @@
           data-aos="fade-right"
           data-aos-duration="1000"
         >
+          <div class="s-why2__text">
+            <header class="s-why2__title">
+              <!--  <p>personalização</p> -->
+              <h2>Nossos Serviços</h2>
+            </header>
+            <p>
+              Oferecemos móveis planejados personalizados, caracterizados pela
+              excelência em design e funcionalidade.
+            </p>
+            <p>
+              Cada projeto é uma fusão de elegância e sofisticação, com
+              materiais de alta qualidade e acabamentos finos que garantem
+              durabilidade.
+            </p>
+            <p>
+              Nossa abordagem integrada assegura que cada elemento do ambiente
+              seja harmonizado, criando espaços encantadores e personalizados.
+            </p>
+          </div>
           <div class="s-why2__img-box">
             <div class="group-img-multiple">
               <div class="group-img-multiple__tiny-column">
@@ -300,7 +335,7 @@
                 </svg>
               </div>
               <div class="group-img-unique">
-                <svg
+                <!-- <svg
                   width="629"
                   height="445"
                   viewBox="0 0 629 445"
@@ -327,42 +362,24 @@
                     width="629"
                     height="445"
                   />
-                </svg>
+                </svg> -->
+
+                <div class="s-why2__img-slide shadow-lg">
+                  <div class="furniture1 img">
+                    <img src="./img/img-box-1.png" alt="Imagem de galeria" />
+                  </div>
+                  <div class="furniture2 img">
+                    <img src="./img/img-box-2.png" alt="Imagem de galeria" />
+                  </div>
+                  <div class="furniture3 img">
+                    <img src="./img/img-box-3.png" alt="Imagem de galeria" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="s-why2__text">
-            <header class="s-why2__title">
-              <p>personalização</p>
-              <h2>Nossos Serviços</h2>
-            </header>
-            <p>
-              Oferecemos móveis planejados personalizados, caracterizados pela
-              excelência em design e funcionalidade. Cada projeto é uma fusão de
-              elegância e sofisticação, com materiais de alta qualidade e
-              acabamentos finos que garantem durabilidade. Nossa abordagem
-              integrada assegura que cada elemento do ambiente seja harmonizado,
-              criando espaços encantadores e personalizados.
-            </p>
-          </div>
         </div>
         <div class="s-why2__item" data-aos="fade-left" data-aos-duration="1000">
-          <div class="s-why2__text">
-            <header class="s-why2__title">
-              <p>experiência única</p>
-              <h2>Nosso Diferencial</h2>
-            </header>
-            <p>
-              O Grupo Biancatto se destaca pela abordagem personalizada e
-              completa. Não apenas fornecemos móveis planejados de alta
-              qualidade, mas também oferecemos acompanhamento de obra e
-              assessoria completa, até mesmo para a compra de decoração.
-              Inspirados por modelos de programas americanos, entregamos a casa
-              toda pronta, levando os clientes a lojas parceiras para a escolha
-              de todos os itens, desde iluminação até decoração e pedras,
-              garantindo uma experiência única e completa.
-            </p>
-          </div>
           <div class="s-why2__img-box">
             <div class="group-img-unique">
               <svg
@@ -377,24 +394,51 @@
                 <rect width="629" height="445" rx="20" fill="transparent" />
                 <image
                   class="furniture1"
-                  href="./img/img-box-1.png"
+                  href="./img/img-box-5.png"
                   width="629"
                   height="445"
                 />
                 <image
                   class="furniture2"
-                  href="./img/img-box-2.png"
+                  href="./img/img-box-6.png"
                   width="629"
                   height="445"
                 />
                 <image
                   class="furniture3"
-                  href="./img/img-box-3.png"
+                  href="./img/img-box-7.png"
                   width="629"
                   height="445"
                 />
               </svg>
             </div>
+          </div>
+          <div class="s-why2__text">
+            <header class="s-why2__title">
+              <!-- <p>experiência única</p> -->
+              <h2>Nosso Diferencial</h2>
+            </header>
+            <p>
+              A excelência é a nossa marca registrada, o Grupo Biancatto se
+              destaca por oferecer uma experiência única.
+            </p>
+            <p>
+              Não fornecemos apenas móveis planejados de alta qualidade, mas
+              também oferecemos um acompanhamento da obra. Garantimos que nossas
+              instalações sejam limpas e organizadas.
+            </p>
+            <p>
+              Nosso planejamento minucioso assegura projetos personalizados e
+              funcionais que atendem as necessidades de nossos clientes.
+              Trabalhamos com os melhores fornecedores, escolhendo materiais de
+              alta qualidade e sustentáveis.
+            </p>
+            <p>
+              Priorizamos a segurança no local de trabalho, protegendo sua casa
+              durante a instalação. Garantimos que tudo esteja em perfeitas
+              condições e que você esteja completamente satisfeito com o
+              resultado.
+            </p>
           </div>
         </div>
       </div>
@@ -402,8 +446,8 @@
 
     <div class="s-portfolio">
       <div class="container">
-        <h2 class="s-portfolio__title">Portfólio</h2>
-        <ul class="portfolio__list">
+        <h2 class="s-portfolio__title">Galeria</h2>
+        <!--  <ul class="portfolio__list">
           <li data-portfolio-nav="cozinhas" class="portfolio__item active">
             Cozinhas
           </li>
@@ -418,23 +462,22 @@
           <li data-portfolio-nav="ripado-leds" class="portfolio__item">
             Ripado e Leds
           </li>
-          <!-- <li data-portfolio-nav="lavabo" class="portfolio__item">Lavabo</li> -->
-        </ul>
+        </ul> -->
 
         <div
           data-portfolio-item="cozinhas"
           style="
-            --swiper-navigation-color: var(--color-main);
-            --swiper-pagination-color: var(--color-main);
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
           "
           class="swiper mySwiper2 swiper-style"
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!--  <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Continental</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img1-cozinhas-cozinhacontinental.png"
@@ -443,10 +486,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!--  <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Continental</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img2-cozinhas-cozinhacontinental.png"
@@ -455,10 +498,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!--  <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Continental</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img3-cozinhas-cozinha-continental.png"
@@ -467,10 +510,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!-- <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Black</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img4-cozinhas-cozinha-black.png"
@@ -479,10 +522,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!-- <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Black</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img5-cozinhas-cozinha-black.png"
@@ -491,10 +534,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!-- <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Black</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img6-cozinhas-cozinha-black.png"
@@ -503,10 +546,10 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <header class="portfolio-item__title">
+              <!-- <header class="portfolio-item__title">
                 <p>Cozinhas</p>
                 <h3>Cozinha Black</h3>
-              </header>
+              </header> -->
               <div class="swiper-zoom-container">
                 <img
                   src="./img/galeria/galeria-img7-cozinhas-cozinha-black.png"
@@ -568,7 +611,7 @@
             </div>
           </div>
         </div>
-        <div
+        <!-- <div
           data-portfolio-item="salas"
           style="
             --swiper-navigation-color: var(--color-main);
@@ -1266,9 +1309,493 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
+
+    <!-- <section class="s-grid-photos">
+      <div class="container">
+        <div id="app">
+          <div class="pswp-gallery" id="my-gallery">
+            <a
+              href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+              data-pswp-width="1875"
+              data-pswp-height="2500"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
+              data-pswp-width="1669"
+              data-pswp-height="2500"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+              data-pswp-width="2500"
+              data-pswp-height="1666"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="pswp-gallery" id="my-gallery">
+            <a
+              href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+              data-pswp-width="1875"
+              data-pswp-height="2500"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
+              data-pswp-width="1669"
+              data-pswp-height="2500"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+              data-pswp-width="2500"
+              data-pswp-height="1666"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="s-grid-photo">
+      <div class="container">
+        <a
+          class="fancybox-thumb-galeria"
+          data-fancybox="gallery"
+          href="./img/galeria/galeria-img1-cozinhas-cozinhacontinental.png"
+        >
+          <span class="fancybox-thumb-galeria-overlay"> Cozinhas </span>
+          <img
+            src="./img/galeria/galeria-img1-cozinhas-cozinhacontinental.png"
+            width="400"
+            height="400"
+            alt="Foto da galeria"
+          />
+        </a>
+
+        <div style="display: none">
+          <a
+            data-fancybox="gallery"
+            href="./img/galeria/galeria-img2-cozinhas-cozinhacontinental.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img2-cozinhas-cozinhacontinental.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery"
+            href="./img/galeria/galeria-img3-cozinhas-cozinha-continental.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img3-cozinhas-cozinha-continental.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery"
+            href="./img/galeria/galeria-img4-cozinhas-cozinha-black.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img4-cozinhas-cozinha-black.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery"
+            href="./img/galeria/galeria-img5-cozinhas-cozinha-black.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img5-cozinhas-cozinha-black.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery"
+            href="./img/galeria/galeria-img6-cozinhas-cozinha-black.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img6-cozinhas-cozinha-black.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery"
+            href="./img/galeria/galeria-img7-cozinhas-cozinha-black.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img7-cozinhas-cozinha-black.png"
+            />
+          </a>
+        </div>
+
+        <a
+          class="fancybox-thumb-galeria"
+          data-fancybox="gallery2"
+          href="./img/galeria/galeria-img8-salas-sala.png"
+        >
+          <span class="fancybox-thumb-galeria-overlay"> Salas </span>
+          <img
+            src="./img/galeria/galeria-img8-salas-sala.png"
+            width="400"
+            height="400"
+            alt="Foto da galeria"
+          />
+        </a>
+
+        <div style="display: none">
+          <a
+            data-fancybox="gallery2"
+            href="./img/galeria/galeria-img9-salas-sala.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img9-salas-sala.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery2"
+            href="./img/galeria/galeria-img10-salas-sala.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img10-salas-sala.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery2"
+            href="./img/galeria/galeria-img11-salas-sala.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img11-salas-sala.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery2"
+            href="./img/galeria/galeria-img12-salas-sala.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img12-salas-sala.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery2"
+            href="./img/galeria/galeria-img14-salas-sala-de-tv.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img14-salas-sala-de-tv.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery2"
+            href="./img/galeria/galeria-img15-salas-sala-de-tv.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img15-salas-sala-de-tv.png"
+            />
+          </a>
+        </div>
+
+        <a
+          class="fancybox-thumb-galeria"
+          data-fancybox="gallery3"
+          href="./img/galeria/galeria-img17-ambientes-especiais-kids.png"
+        >
+          <span class="fancybox-thumb-galeria-overlay">
+            Ambientes Especiais
+          </span>
+          <img
+            src="./img/galeria/galeria-img17-ambientes-especiais-kids.png"
+            width="400"
+            height="400"
+            alt="Foto da galeria"
+          />
+        </a>
+
+        <div style="display: none">
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img18-ambientes-especiais-kids.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img18-ambientes-especiais-kids.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img19-ambientes-especiais-kids.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img19-ambientes-especiais-kids.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img20-ambientes-especiais-kids.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img20-ambientes-especiais-kids.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img21-ambientes-especiais-corporativo.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img21-ambientes-especiais-corporativo.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="../img/galeria/galeria-img22-ambientes-especiais-corporativo.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img22-ambientes-especiais-corporativo.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img23-ambientes-especiais-corporativo.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img23-ambientes-especiais-corporativo.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img24-ambientes-especiais-corporativo.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img24-ambientes-especiais-corporativo.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img25-ambientes-especiais-lazer.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img25-ambientes-especiais-lazer.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img26-ambientes-especiais-lazer.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img26-ambientes-especiais-lazer.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img27-ambientes-especiais-lazer.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img27-ambientes-especiais-lazer.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img28-ambientes-especiais-lazer.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img28-ambientes-especiais-lazer.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery3"
+            href="./img/galeria/galeria-img29-ambientes-especiais-lazer.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img29-ambientes-especiais-lazer.png"
+            />
+          </a>
+        </div>
+
+        <a
+          class="fancybox-thumb-galeria"
+          data-fancybox="gallery4"
+          href="./img/galeria/galeria-img30-quartos-dormitorio-green.png"
+        >
+          <span class="fancybox-thumb-galeria-overlay"> Quartos </span>
+          <img
+            src="./img/galeria/galeria-img30-quartos-dormitorio-green.png"
+            width="400"
+            height="400"
+            alt="Foto da galeria"
+          />
+        </a>
+
+        <div style="display: none">
+          <a
+            data-fancybox="gallery4"
+            href="./img/galeria/galeria-img31-quartos-dormitorio-green.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img31-quartos-dormitorio-green.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery4"
+            href="./img/galeria/galeria-img32-quartos-dormitorio-green.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img32-quartos-dormitorio-green.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery4"
+            href="./img/galeria/galeria-img39-quartos-dormitorio-rose.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img39-quartos-dormitorio-rose.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery4"
+            href="./img/galeria/galeria-img40-quartos-dormitorio-rose.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img40-quartos-dormitorio-rose.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery4"
+            href="./img/galeria/galeria-img41-quartos-dormitorio-rose.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img41-quartos-dormitorio-rose.png"
+            />
+          </a>
+        </div>
+
+        <a
+          class="fancybox-thumb-galeria"
+          data-fancybox="gallery5"
+          href="./img/galeria/galeria-img33-ripado-e-leds-ripado-e-leds.png"
+        >
+          <span class="fancybox-thumb-galeria-overlay"> Ripado e Leds </span>
+          <img
+            src="./img/galeria/galeria-img33-ripado-e-leds-ripado-e-leds.png"
+            width="400"
+            height="400"
+            alt="Foto da galeria"
+          />
+        </a>
+
+        <div style="display: none">
+          <a
+            data-fancybox="gallery5"
+            href="./img/galeria/galeria-img34-ripado-e-leds-ripado-e-leds.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img34-ripado-e-leds-ripado-e-leds.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery5"
+            href="./img/galeria/galeria-img35-ripado-e-leds-ripado-e-leds.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img35-ripado-e-leds-ripado-e-leds.png"
+            />
+          </a>
+        </div>
+
+        <a
+          class="fancybox-thumb-galeria"
+          data-fancybox="gallery6"
+          href="./img/galeria/galeria-img36-armarios-e-organizacao-closet.png"
+        >
+          <span class="fancybox-thumb-galeria-overlay">
+            Armários e Organização
+          </span>
+          <img
+            src="./img/galeria/galeria-img36-armarios-e-organizacao-closet.png"
+            width="400"
+            height="400"
+            alt="Foto da galeria"
+          />
+        </a>
+
+        <div style="display: none">
+          <a
+            data-fancybox="gallery6"
+            href="./img/galeria/galeria-img37-armarios-e-organizacao-closet.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img37-armarios-e-organizacao-closet.png"
+            />
+          </a>
+          <a
+            data-fancybox="gallery6"
+            href="./img/galeria/galeria-img38-armarios-e-organizacao-closet.png"
+          >
+            <img
+              alt="Foto da galeria"
+              src="./img/galeria/galeria-img38-armarios-e-organizacao-closet.png"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="s-contact" id="contact-form">
       <div class="container">
@@ -1428,25 +1955,27 @@
             <p>Avenida Quadra dos Endereços, 44 - Setor Moinho dos Ventos</p>
             <a href="#" target="_blank" class="accent-link"
               >Ver no mapa
-              <img src="./img/icon-arrow-gold.svg" alt="Ícone de seta"
+              <img
+                src="./img/grommet-icons_form-next-link-alt.svg"
+                alt="Ícone de seta"
             /></a>
           </div>
           <div class="main-footer__column">
             <h3>Contato</h3>
             <a href="mailto:contato@grupobiancatto.com.br" target="_blank"
               ><img
-                src="./img/ph_envelope-light.svg"
+                src="./img/ph_envelope-light-green.svg"
                 alt=""
               />contato@grupobiancatto.com.br</a
             >
             <a href="tel:+5511966735527" target="_blank"
-              ><img src="./img/ph_phone-call-light.svg" alt="" />(11)
+              ><img src="./img/ph_phone-call-light-green.svg" alt="" />(11)
               96673-5527</a
             >
             <a
               href="https://wa.me/5511966735527?text=Olá,%20gostaria%20de%20obter%20mais%20informações%20sobre%20os%20seus%20serviços."
               target="_blank"
-              ><img src="./img/ph_whatsapp-logo-light.svg" alt="" />(11)
+              ><img src="./img/ph_whatsapp-logo-light-dark.svg" alt="" />(11)
               96673-5527</a
             >
             <p>Atendimento: 2ª a 6ª das 8h às 18h e sáb. das 10h às 14h</p>
@@ -1454,15 +1983,24 @@
           <div class="main-footer__column">
             <h3>Nos siga</h3>
             <a href="https://www.instagram.com/grupobiancatto/" target="_blank"
-              ><img src="./img/ph_envelope-light.svg" alt="" />Instagram</a
+              ><img
+                src="./img/ph_instagram-logo-light-green.svg"
+                alt=""
+              />Instagram</a
             >
             <a
               href="https://www.facebook.com/people/Grupo-Biancatto/100093286254208/"
               target="_blank"
-              ><img src="./img/ph_phone-call-light.svg" alt="" />Facebook</a
+              ><img
+                src="./img/ph_facebook-logo-light-green.svg"
+                alt=""
+              />Facebook</a
             >
             <a href="https://twitter.com/grupobiancatto" target="_blank"
-              ><img src="./img/ph_whatsapp-logo-light.svg" alt="" />Linkedin</a
+              ><img
+                src="./img/ph_linkedin-logo-light-green.svg"
+                alt=""
+              />Linkedin</a
             >
           </div>
         </div>
@@ -1471,6 +2009,53 @@
         </div>
       </div>
     </footer>
+    <a
+      href="https://wa.me/5511966735527?text=Olá,%20gostaria%20de%20obter%20mais%20informações%20sobre%20os%20seus%20serviços."
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img
+        src="./img/ph_whatsapp-logo-light-green.svg"
+        alt="Ícone do WhatsApp"
+      />
+    </a>
+    <!-- js module -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script type="module">
+      import PhotoSwipeLightbox from "./photoswipe/photoswipe-lightbox.esm.min.js";
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: () => import("./photoswipe/photoswipe.esm.min.js"),
+      });
+      lightbox.init();
+    </script>
+
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });
+      Fancybox.bind('[data-fancybox="gallery2"]', {
+        //
+      });
+      Fancybox.bind('[data-fancybox="gallery3"]', {
+        //
+      });
+      Fancybox.bind('[data-fancybox="gallery4"]', {
+        //
+      });
+      Fancybox.bind('[data-fancybox="gallery5"]', {
+        //
+      });
+      Fancybox.bind('[data-fancybox="gallery6"]', {
+        //
+      });
+      Fancybox.bind('[data-fancybox="gallery7"]', {
+        //
+      });
+    </script>
 
     <!-- init CDN JQuery last version-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

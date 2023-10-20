@@ -13,12 +13,13 @@
   height: 70%;
   .swiper-slide {
     font-size: 18px;
-    background: #fff;
+    background: var(--main-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     img {
+      border-radius: 20px;
       object-fit: cover !important;
     }
 
@@ -114,6 +115,8 @@
     img {
       object-fit: cover !important;
       height: 100%;
+      width: 100%;
+      border-radius: 20px;
     }
   }
 }
