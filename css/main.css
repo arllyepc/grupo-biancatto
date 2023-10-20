@@ -442,6 +442,10 @@ button {
   display: none;
 }
 
+[data-fancybox-toggle-slideshow] {
+  title: "trocar";
+}
+
 .furniture1 {
   opacity: 0;
   -webkit-animation: furniture 10s ease 0s infinite;
